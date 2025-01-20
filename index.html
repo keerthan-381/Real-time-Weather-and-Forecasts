@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="weather.js" defer></script>
+</head>
+<body>
+    <h1>🌤️ Weather Information</h1>
+    
+    <div class="search-container">
+        <input type="text" id="cityInput" placeholder="Enter city name 🌍" />
+        <button onclick="getWeatherAndAQIData()">🔍 Get Weather</button>
+    </div>
+
+    <div id="error" class="error-message"></div>
+    
+    <div id="weather-container" class="weather-container">
+        <div id="left-data" class="data-section">
+            <h2>🌦️ Current Weather</h2>
+            <div class="data-box" id="location">📍 Location</div>
+            <div class="data-box" id="time">⏰ Time</div>
+            <div class="data-box" id="temperature">🌡️ Temperature</div>
+            <div class="data-box" id="condition">🌥️ Condition</div>
+            <div class="data-box" id="wind">💨 Wind Speed</div>
+            <div class="data-box" id="windGust">🌬️ Wind Gust</div>
+            <div class="data-box" id="pressure">⚖️ Pressure</div>
+            <div class="data-box" id="precipitation">🌧️ Precipitation</div>
+            <div class="data-box" id="humidity">💦 Humidity</div>
+            <div class="data-box" id="cloud">☁️ Cloud Cover</div>
+            <div class="data-box" id="visibility">👁️ Visibility</div>
+            <div class="data-box" id="uv">☀️ UV Index</div>
+            <div class="data-box" id="feelsLike">🌡️ Feels Like</div>
+            <div class="data-box" id="windChill">🥶 Wind Chill</div>
+            <div class="data-box" id="heatIndex">🔥 Heat Index</div>
+            <div class="data-box" id="dewpoint">💧 Dew Point</div>
+            <h2>🌙 Astronomical Information</h2>
+            <div class="data-box" id="sunrise">🌅 Sunrise</div>
+            <div class="data-box" id="sunset">🌇 Sunset</div>
+            <div class="data-box" id="moonrise">🌙 Moonrise</div>
+            <div class="data-box" id="moonset">🌒 Moonset</div>
+            <div class="data-box" id="moonPhase">🌓 Moon Phase</div>
+        </div>
+    
+        <div id="right-data" class="data-section">
+            <h2>⏳ Hourly Forecast</h2>
+            <div id="hourly">🕰️ Hourly Weather Data</div>
+        </div>
+    
+
+        
+    </div>
+    
+</body>
+</html>
