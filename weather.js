@@ -1,5 +1,5 @@
 async function getWeatherAndAQIData() {
-    const apiKey = "a4fa56b3ae034b35b2683434251601";
+    const apiKey = "YOUR_API_KEY";
     const location = document.getElementById('cityInput').value;
 
     if (!location) {
